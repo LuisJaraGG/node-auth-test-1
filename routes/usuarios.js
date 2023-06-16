@@ -16,6 +16,8 @@ const { usuariosGet,
 const router = Router();
 
 
+router.get('/listar', usuariosGet);
+
 router.get('/',
     [validarJWT,
         // validarAdministrador
